@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B509EB28482173D97A4D410 /* Pods_HumOS_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB735A9453F0534DD4D80712 /* Pods_HumOS_SDK_iOS.framework */; };
+		E916E8341CF29CC2002C4644 /* Tracking.h in Headers */ = {isa = PBXBuildFile; fileRef = E916E8321CF29CC2002C4644 /* Tracking.h */; };
+		E916E8351CF29CC2002C4644 /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = E916E8331CF29CC2002C4644 /* Tracking.m */; };
+		E96738721CCEAFC200506BF2 /* HumOSTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738711CCEAFC200506BF2 /* HumOSTest.swift */; };
+		E96738781CD81BC800506BF2 /* HumOSPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738771CD81BC800506BF2 /* HumOSPerson.swift */; };
+		E967387A1CD81CDC00506BF2 /* HumOSProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738791CD81CDC00506BF2 /* HumOSProvider.swift */; };
+		E967387C1CDABCA900506BF2 /* HumOSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967387B1CDABCA900506BF2 /* HumOSCard.swift */; };
+		E96738971CDC5FF600506BF2 /* HumOSBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967388D1CDC5FF600506BF2 /* HumOSBlob.swift */; };
+		E96738981CDC5FF600506BF2 /* HumOSHelloCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967388E1CDC5FF600506BF2 /* HumOSHelloCard.swift */; };
+		E96738991CDC5FF600506BF2 /* HumOSInviteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967388F1CDC5FF600506BF2 /* HumOSInviteCard.swift */; };
+		E967389A1CDC5FF600506BF2 /* HumOSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738901CDC5FF600506BF2 /* HumOSMessage.swift */; };
+		E967389B1CDC5FF600506BF2 /* HumOSPatientUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738911CDC5FF600506BF2 /* HumOSPatientUser.swift */; };
+		E967389C1CDC5FF600506BF2 /* HumOSPetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738921CDC5FF600506BF2 /* HumOSPetCard.swift */; };
+		E967389D1CDC5FF600506BF2 /* HumOSPlayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738931CDC5FF600506BF2 /* HumOSPlayCard.swift */; };
+		E967389E1CDC5FF600506BF2 /* HumOSProviderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738941CDC5FF600506BF2 /* HumOSProviderUser.swift */; };
+		E967389F1CDC5FF600506BF2 /* HumOSSmileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738951CDC5FF600506BF2 /* HumOSSmileCard.swift */; };
+		E96738A01CDC5FF600506BF2 /* HumOSVisitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96738961CDC5FF600506BF2 /* HumOSVisitCard.swift */; };
+		E97069371CEBAAD700215675 /* HumOSUserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97069361CEBAAD700215675 /* HumOSUserTest.swift */; };
+		E99722A61CE3E91D00587069 /* libMantle.a in Headers */ = {isa = PBXBuildFile; fileRef = E99722A21CE3D70000587069 /* libMantle.a */; };
+		E99722A71CE3EB6100587069 /* libAFNetworking.a in Headers */ = {isa = PBXBuildFile; fileRef = E99722A41CE3D9AE00587069 /* libAFNetworking.a */; };
+		E99722A81CE3EF0400587069 /* HumOSClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE2121CC95D99004C6E6D /* HumOSClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE1DB1CC95906004C6E6D /* HumOS_SDK_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE1DA1CC95906004C6E6D /* HumOS_SDK_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE1E21CC95906004C6E6D /* HumOS_SDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9BAE1D71CC95906004C6E6D /* HumOS_SDK_iOS.framework */; };
+		E9BAE1E71CC95906004C6E6D /* HumOS_SDK_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1E61CC95906004C6E6D /* HumOS_SDK_iOSTests.swift */; };
+		E9BAE2001CC95D32004C6E6D /* HumOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F21CC95D32004C6E6D /* HumOS.swift */; };
+		E9BAE2011CC95D32004C6E6D /* HumOSAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F31CC95D32004C6E6D /* HumOSAppConfig.swift */; };
+		E9BAE2021CC95D32004C6E6D /* HumOSRegisteredConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F41CC95D32004C6E6D /* HumOSRegisteredConnection.swift */; };
+		E9BAE2031CC95D32004C6E6D /* HumOSUnRegisteredConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F51CC95D32004C6E6D /* HumOSUnRegisteredConnection.swift */; };
+		E9BAE2041CC95D32004C6E6D /* HumOSConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F61CC95D32004C6E6D /* HumOSConnection.swift */; };
+		E9BAE2051CC95D32004C6E6D /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F71CC95D32004C6E6D /* NSError.swift */; };
+		E9BAE2061CC95D32004C6E6D /* HumOSErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F81CC95D32004C6E6D /* HumOSErrorType.swift */; };
+		E9BAE2071CC95D32004C6E6D /* HumOSPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1F91CC95D32004C6E6D /* HumOSPatient.swift */; };
+		E9BAE2081CC95D32004C6E6D /* HumOSSDK-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE1FA1CC95D32004C6E6D /* HumOSSDK-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE20B1CC95D32004C6E6D /* HumOSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1FD1CC95D32004C6E6D /* HumOSUser.swift */; };
+		E9BAE20D1CC95D32004C6E6D /* HumOSVaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE1FF1CC95D32004C6E6D /* HumOSVaults.swift */; };
+		E9BAE2271CC95D99004C6E6D /* HumOSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2131CC95D99004C6E6D /* HumOSClient.m */; };
+		E9BAE2281CC95D99004C6E6D /* HumOSClientConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE2141CC95D99004C6E6D /* HumOSClientConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE2291CC95D99004C6E6D /* HumOSClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2151CC95D99004C6E6D /* HumOSClientConstants.m */; };
+		E9BAE22A1CC95D99004C6E6D /* HumOSCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE2161CC95D99004C6E6D /* HumOSCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE22B1CC95D99004C6E6D /* HumOSCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2171CC95D99004C6E6D /* HumOSCloud.m */; };
+		E9BAE22C1CC95D99004C6E6D /* HumOSConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE2181CC95D99004C6E6D /* HumOSConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE22D1CC95D99004C6E6D /* HumOSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2191CC95D99004C6E6D /* HumOSConfig.m */; };
+		E9BAE22E1CC95D99004C6E6D /* HumOSNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE21A1CC95D99004C6E6D /* HumOSNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE22F1CC95D99004C6E6D /* HumOSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE21B1CC95D99004C6E6D /* HumOSNetworkManager.m */; };
+		E9BAE2301CC95D99004C6E6D /* HumOSQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE21C1CC95D99004C6E6D /* HumOSQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE2311CC95D99004C6E6D /* HumOSQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE21D1CC95D99004C6E6D /* HumOSQuery.m */; };
+		E9BAE2351CC95D99004C6E6D /* ParametersEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BAE2211CC95D99004C6E6D /* ParametersEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9BAE2361CC95D99004C6E6D /* ParametersEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2221CC95D99004C6E6D /* ParametersEncoder.m */; };
+		E9BAE2411CC95F3E004C6E6D /* ConfigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2381CC95F3E004C6E6D /* ConfigTest.m */; };
+		E9BAE2421CC95F3E004C6E6D /* HumOSCleint_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2391CC95F3E004C6E6D /* HumOSCleint_Tests.m */; };
+		E9BAE2431CC95F3E004C6E6D /* PatientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE23A1CC95F3E004C6E6D /* PatientLogin.m */; };
+		E9BAE2441CC95F3E004C6E6D /* ProviderLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE23B1CC95F3E004C6E6D /* ProviderLogin.m */; };
+		E9BAE2451CC95F3E004C6E6D /* ProviderWithParams_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE23C1CC95F3E004C6E6D /* ProviderWithParams_Test.m */; };
+		E9BAE2461CC95F3E004C6E6D /* PushMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE23D1CC95F3E004C6E6D /* PushMessage.m */; };
+		E9BAE2471CC95F3E004C6E6D /* SearchUserWithPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE23E1CC95F3E004C6E6D /* SearchUserWithPhone.m */; };
+		E9BAE2481CC95F3E004C6E6D /* SearchWithEmailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE23F1CC95F3E004C6E6D /* SearchWithEmailTest.m */; };
+		E9BAE2491CC95F3E004C6E6D /* SignOutUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE2401CC95F3E004C6E6D /* SignOutUser.m */; };
+		E9D974451CFCC5B2008FBD79 /* HumOSServerCommnds.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974441CFCC5B2008FBD79 /* HumOSServerCommnds.swift */; };
+		E9D974481CFE68EA008FBD79 /* HumOSMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974471CFE68EA008FBD79 /* HumOSMessagingService.swift */; };
+		E9D9744A1CFEB59B008FBD79 /* HumOSServerErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974491CFEB59B008FBD79 /* HumOSServerErrorCodes.swift */; };
+		E9D9744C1CFF6AAA008FBD79 /* HumOSParamKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9744B1CFF6AAA008FBD79 /* HumOSParamKeys.swift */; };
+		E9D9744E1CFF89FF008FBD79 /* HumOSServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9744D1CFF89FF008FBD79 /* HumOSServerError.swift */; };
+		E9D974501CFF9483008FBD79 /* HumOSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9744F1CFF9483008FBD79 /* HumOSRequest.swift */; };
+		E9D974531D00DB69008FBD79 /* HumOSCardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974521D00DB69008FBD79 /* HumOSCardsService.swift */; };
+		E9D974551D00F46C008FBD79 /* NetworkingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974541D00F46C008FBD79 /* NetworkingUtil.swift */; };
+		E9D974571D01FE4E008FBD79 /* HumOSNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974561D01FE4E008FBD79 /* HumOSNetworkService.swift */; };
+		E9D974591D08DD85008FBD79 /* HumOSLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974581D08DD85008FBD79 /* HumOSLoginService.swift */; };
+		E9D9745B1D0B745A008FBD79 /* HumOSSikkaProvidersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9745A1D0B745A008FBD79 /* HumOSSikkaProvidersService.swift */; };
+		E9D9745D1D0BA29A008FBD79 /* HumOSAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9745C1D0BA29A008FBD79 /* HumOSAddress.swift */; };
+		E9D9745F1D0BF75C008FBD79 /* HumOSBlobService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D9745E1D0BF75C008FBD79 /* HumOSBlobService.swift */; };
+		E9D974611D0CFBA1008FBD79 /* HumOSTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D974601D0CFBA1008FBD79 /* HumOSTracking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9BAE1E31CC95906004C6E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9BAE1CE1CC95906004C6E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9BAE1D61CC95906004C6E6D;
+			remoteInfo = HumOS_SDK_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B2C6B39F0853D01F910829D /* Pods-HumOS_SDK_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumOS_SDK_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HumOS_SDK_iOS/Pods-HumOS_SDK_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		481ED4D7289FC08E5467EA39 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB735A9453F0534DD4D80712 /* Pods_HumOS_SDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumOS_SDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1C42AE37BECAEEF7D6C030 /* Pods-HumOS_SDK_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumOS_SDK_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HumOS_SDK_iOS/Pods-HumOS_SDK_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E916E8321CF29CC2002C4644 /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracking.h; path = "../../ios-new-humos2/Humos/Tracking.h"; sourceTree = "<group>"; };
+		E916E8331CF29CC2002C4644 /* Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracking.m; path = "../../ios-new-humos2/Humos/Tracking.m"; sourceTree = "<group>"; };
+		E96738711CCEAFC200506BF2 /* HumOSTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSTest.swift; sourceTree = "<group>"; };
+		E96738771CD81BC800506BF2 /* HumOSPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSPerson.swift; path = HumOS/HumOSPerson.swift; sourceTree = "<group>"; };
+		E96738791CD81CDC00506BF2 /* HumOSProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSProvider.swift; path = HumOS/HumOSProvider.swift; sourceTree = "<group>"; };
+		E967387B1CDABCA900506BF2 /* HumOSCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSCard.swift; path = HumOS/HumOSCard.swift; sourceTree = "<group>"; };
+		E967388D1CDC5FF600506BF2 /* HumOSBlob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSBlob.swift; path = HumOS/HumOSBlob.swift; sourceTree = "<group>"; };
+		E967388E1CDC5FF600506BF2 /* HumOSHelloCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSHelloCard.swift; path = HumOS/HumOSHelloCard.swift; sourceTree = "<group>"; };
+		E967388F1CDC5FF600506BF2 /* HumOSInviteCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSInviteCard.swift; path = HumOS/HumOSInviteCard.swift; sourceTree = "<group>"; };
+		E96738901CDC5FF600506BF2 /* HumOSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSMessage.swift; path = HumOS/HumOSMessage.swift; sourceTree = "<group>"; };
+		E96738911CDC5FF600506BF2 /* HumOSPatientUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSPatientUser.swift; path = HumOS/HumOSPatientUser.swift; sourceTree = "<group>"; };
+		E96738921CDC5FF600506BF2 /* HumOSPetCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSPetCard.swift; path = HumOS/HumOSPetCard.swift; sourceTree = "<group>"; };
+		E96738931CDC5FF600506BF2 /* HumOSPlayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSPlayCard.swift; path = HumOS/HumOSPlayCard.swift; sourceTree = "<group>"; };
+		E96738941CDC5FF600506BF2 /* HumOSProviderUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSProviderUser.swift; path = HumOS/HumOSProviderUser.swift; sourceTree = "<group>"; };
+		E96738951CDC5FF600506BF2 /* HumOSSmileCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSSmileCard.swift; path = HumOS/HumOSSmileCard.swift; sourceTree = "<group>"; };
+		E96738961CDC5FF600506BF2 /* HumOSVisitCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSVisitCard.swift; path = HumOS/HumOSVisitCard.swift; sourceTree = "<group>"; };
+		E97069361CEBAAD700215675 /* HumOSUserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSUserTest.swift; sourceTree = "<group>"; };
+		E99722A21CE3D70000587069 /* libMantle.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMantle.a; path = "../Library/Developer/Xcode/DerivedData/HumOS_SDK_iOS-dbducruqmqvvivacyciuqzhortge/Build/Products/Debug-iphonesimulator/libMantle.a"; sourceTree = "<group>"; };
+		E99722A41CE3D9AE00587069 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "../Library/Developer/Xcode/DerivedData/HumOS_SDK_iOS-dbducruqmqvvivacyciuqzhortge/Build/Products/Debug-iphonesimulator/libAFNetworking.a"; sourceTree = "<group>"; };
+		E9BAE1D71CC95906004C6E6D /* HumOS_SDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HumOS_SDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BAE1DA1CC95906004C6E6D /* HumOS_SDK_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumOS_SDK_iOS.h; sourceTree = "<group>"; };
+		E9BAE1DC1CC95906004C6E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BAE1E11CC95906004C6E6D /* HumOS_SDK_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HumOS_SDK_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BAE1E61CC95906004C6E6D /* HumOS_SDK_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumOS_SDK_iOSTests.swift; sourceTree = "<group>"; };
+		E9BAE1E81CC95906004C6E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BAE1F21CC95D32004C6E6D /* HumOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOS.swift; path = HumOS/HumOS.swift; sourceTree = "<group>"; };
+		E9BAE1F31CC95D32004C6E6D /* HumOSAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSAppConfig.swift; path = HumOS/HumOSAppConfig.swift; sourceTree = "<group>"; };
+		E9BAE1F41CC95D32004C6E6D /* HumOSRegisteredConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSRegisteredConnection.swift; path = HumOS/HumOSRegisteredConnection.swift; sourceTree = "<group>"; };
+		E9BAE1F51CC95D32004C6E6D /* HumOSUnRegisteredConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSUnRegisteredConnection.swift; path = HumOS/HumOSUnRegisteredConnection.swift; sourceTree = "<group>"; };
+		E9BAE1F61CC95D32004C6E6D /* HumOSConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSConnection.swift; path = HumOS/HumOSConnection.swift; sourceTree = "<group>"; };
+		E9BAE1F71CC95D32004C6E6D /* NSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSError.swift; path = HumOS/NSError.swift; sourceTree = "<group>"; };
+		E9BAE1F81CC95D32004C6E6D /* HumOSErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSErrorType.swift; path = HumOS/HumOSErrorType.swift; sourceTree = "<group>"; };
+		E9BAE1F91CC95D32004C6E6D /* HumOSPatient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSPatient.swift; path = HumOS/HumOSPatient.swift; sourceTree = "<group>"; };
+		E9BAE1FA1CC95D32004C6E6D /* HumOSSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HumOSSDK-Bridging-Header.h"; path = "HumOS/HumOSSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9BAE1FD1CC95D32004C6E6D /* HumOSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSUser.swift; path = HumOS/HumOSUser.swift; sourceTree = "<group>"; };
+		E9BAE1FF1CC95D32004C6E6D /* HumOSVaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumOSVaults.swift; path = HumOS/HumOSVaults.swift; sourceTree = "<group>"; };
+		E9BAE2121CC95D99004C6E6D /* HumOSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumOSClient.h; path = Networking/HumOSClient.h; sourceTree = "<group>"; };
+		E9BAE2131CC95D99004C6E6D /* HumOSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumOSClient.m; path = Networking/HumOSClient.m; sourceTree = "<group>"; };
+		E9BAE2141CC95D99004C6E6D /* HumOSClientConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumOSClientConstants.h; path = Networking/HumOSClientConstants.h; sourceTree = "<group>"; };
+		E9BAE2151CC95D99004C6E6D /* HumOSClientConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumOSClientConstants.m; path = Networking/HumOSClientConstants.m; sourceTree = "<group>"; };
+		E9BAE2161CC95D99004C6E6D /* HumOSCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumOSCloud.h; path = Networking/HumOSCloud.h; sourceTree = "<group>"; };
+		E9BAE2171CC95D99004C6E6D /* HumOSCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumOSCloud.m; path = Networking/HumOSCloud.m; sourceTree = "<group>"; };
+		E9BAE2181CC95D99004C6E6D /* HumOSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumOSConfig.h; path = Networking/HumOSConfig.h; sourceTree = "<group>"; };
+		E9BAE2191CC95D99004C6E6D /* HumOSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumOSConfig.m; path = Networking/HumOSConfig.m; sourceTree = "<group>"; };
+		E9BAE21A1CC95D99004C6E6D /* HumOSNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumOSNetworkManager.h; path = Networking/HumOSNetworkManager.h; sourceTree = "<group>"; };
+		E9BAE21B1CC95D99004C6E6D /* HumOSNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumOSNetworkManager.m; path = Networking/HumOSNetworkManager.m; sourceTree = "<group>"; };
+		E9BAE21C1CC95D99004C6E6D /* HumOSQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumOSQuery.h; path = Networking/HumOSQuery.h; sourceTree = "<group>"; };
+		E9BAE21D1CC95D99004C6E6D /* HumOSQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumOSQuery.m; path = Networking/HumOSQuery.m; sourceTree = "<group>"; };
+		E9BAE2211CC95D99004C6E6D /* ParametersEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParametersEncoder.h; path = Networking/ParametersEncoder.h; sourceTree = "<group>"; };
+		E9BAE2221CC95D99004C6E6D /* ParametersEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParametersEncoder.m; path = Networking/ParametersEncoder.m; sourceTree = "<group>"; };
+		E9BAE2371CC95F3E004C6E6D /* HumOS_SDK_iOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HumOS_SDK_iOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9BAE2381CC95F3E004C6E6D /* ConfigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigTest.m; sourceTree = "<group>"; };
+		E9BAE2391CC95F3E004C6E6D /* HumOSCleint_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumOSCleint_Tests.m; sourceTree = "<group>"; };
+		E9BAE23A1CC95F3E004C6E6D /* PatientLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientLogin.m; sourceTree = "<group>"; };
+		E9BAE23B1CC95F3E004C6E6D /* ProviderLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProviderLogin.m; sourceTree = "<group>"; };
+		E9BAE23C1CC95F3E004C6E6D /* ProviderWithParams_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProviderWithParams_Test.m; sourceTree = "<group>"; };
+		E9BAE23D1CC95F3E004C6E6D /* PushMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushMessage.m; sourceTree = "<group>"; };
+		E9BAE23E1CC95F3E004C6E6D /* SearchUserWithPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchUserWithPhone.m; sourceTree = "<group>"; };
+		E9BAE23F1CC95F3E004C6E6D /* SearchWithEmailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchWithEmailTest.m; sourceTree = "<group>"; };
+		E9BAE2401CC95F3E004C6E6D /* SignOutUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignOutUser.m; sourceTree = "<group>"; };
+		E9D974441CFCC5B2008FBD79 /* HumOSServerCommnds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSServerCommnds.swift; sourceTree = "<group>"; };
+		E9D974471CFE68EA008FBD79 /* HumOSMessagingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSMessagingService.swift; sourceTree = "<group>"; };
+		E9D974491CFEB59B008FBD79 /* HumOSServerErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSServerErrorCodes.swift; sourceTree = "<group>"; };
+		E9D9744B1CFF6AAA008FBD79 /* HumOSParamKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSParamKeys.swift; sourceTree = "<group>"; };
+		E9D9744D1CFF89FF008FBD79 /* HumOSServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSServerError.swift; sourceTree = "<group>"; };
+		E9D9744F1CFF9483008FBD79 /* HumOSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSRequest.swift; sourceTree = "<group>"; };
+		E9D974521D00DB69008FBD79 /* HumOSCardsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSCardsService.swift; sourceTree = "<group>"; };
+		E9D974541D00F46C008FBD79 /* NetworkingUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingUtil.swift; sourceTree = "<group>"; };
+		E9D974561D01FE4E008FBD79 /* HumOSNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSNetworkService.swift; sourceTree = "<group>"; };
+		E9D974581D08DD85008FBD79 /* HumOSLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSLoginService.swift; sourceTree = "<group>"; };
+		E9D9745A1D0B745A008FBD79 /* HumOSSikkaProvidersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSSikkaProvidersService.swift; sourceTree = "<group>"; };
+		E9D9745C1D0BA29A008FBD79 /* HumOSAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSAddress.swift; sourceTree = "<group>"; };
+		E9D9745E1D0BF75C008FBD79 /* HumOSBlobService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSBlobService.swift; sourceTree = "<group>"; };
+		E9D974601D0CFBA1008FBD79 /* HumOSTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumOSTracking.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9BAE1D31CC95906004C6E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B509EB28482173D97A4D410 /* Pods_HumOS_SDK_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BAE1DE1CC95906004C6E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BAE1E21CC95906004C6E6D /* HumOS_SDK_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		487801AE50B60ACED29EB3DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E99722A41CE3D9AE00587069 /* libAFNetworking.a */,
+				E99722A21CE3D70000587069 /* libMantle.a */,
+				481ED4D7289FC08E5467EA39 /* libPods.a */,
+				AB735A9453F0534DD4D80712 /* Pods_HumOS_SDK_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		978DBC1AC41707BA54C66F5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C6B39F0853D01F910829D /* Pods-HumOS_SDK_iOS.debug.xcconfig */,
+				BF1C42AE37BECAEEF7D6C030 /* Pods-HumOS_SDK_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E916E82F1CF29A3B002C4644 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E916E8301CF29A86002C4644 /* Cards */,
+				E96738771CD81BC800506BF2 /* HumOSPerson.swift */,
+				E9D9745C1D0BA29A008FBD79 /* HumOSAddress.swift */,
+				E967388D1CDC5FF600506BF2 /* HumOSBlob.swift */,
+				E96738911CDC5FF600506BF2 /* HumOSPatientUser.swift */,
+				E9BAE1F61CC95D32004C6E6D /* HumOSConnection.swift */,
+				E9BAE1F91CC95D32004C6E6D /* HumOSPatient.swift */,
+				E9BAE1FD1CC95D32004C6E6D /* HumOSUser.swift */,
+				E96738791CD81CDC00506BF2 /* HumOSProvider.swift */,
+				E96738941CDC5FF600506BF2 /* HumOSProviderUser.swift */,
+				E9BAE1F41CC95D32004C6E6D /* HumOSRegisteredConnection.swift */,
+				E9BAE1F51CC95D32004C6E6D /* HumOSUnRegisteredConnection.swift */,
+				E96738901CDC5FF600506BF2 /* HumOSMessage.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E916E8301CF29A86002C4644 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				E967387B1CDABCA900506BF2 /* HumOSCard.swift */,
+				E967388E1CDC5FF600506BF2 /* HumOSHelloCard.swift */,
+				E967388F1CDC5FF600506BF2 /* HumOSInviteCard.swift */,
+				E96738921CDC5FF600506BF2 /* HumOSPetCard.swift */,
+				E96738931CDC5FF600506BF2 /* HumOSPlayCard.swift */,
+				E96738951CDC5FF600506BF2 /* HumOSSmileCard.swift */,
+				E96738961CDC5FF600506BF2 /* HumOSVisitCard.swift */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
+		E916E8311CF29B3A002C4644 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				E916E8321CF29CC2002C4644 /* Tracking.h */,
+				E916E8331CF29CC2002C4644 /* Tracking.m */,
+				E9D974601D0CFBA1008FBD79 /* HumOSTracking.swift */,
+			);
+			name = Tracking;
+			sourceTree = "<group>";
+		};
+		E97069351CEA9C9900215675 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9BAE1F71CC95D32004C6E6D /* NSError.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		E9BAE1CD1CC95906004C6E6D = {
+			isa = PBXGroup;
+			children = (
+				E9BAE1D91CC95906004C6E6D /* HumOS_SDK_iOS */,
+				E9BAE1E51CC95906004C6E6D /* HumOS_SDK_iOSTests */,
+				E9BAE1D81CC95906004C6E6D /* Products */,
+				978DBC1AC41707BA54C66F5F /* Pods */,
+				487801AE50B60ACED29EB3DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9BAE1D81CC95906004C6E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9BAE1D71CC95906004C6E6D /* HumOS_SDK_iOS.framework */,
+				E9BAE1E11CC95906004C6E6D /* HumOS_SDK_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9BAE1D91CC95906004C6E6D /* HumOS_SDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E9BAE1DA1CC95906004C6E6D /* HumOS_SDK_iOS.h */,
+				E9BAE1DC1CC95906004C6E6D /* Info.plist */,
+				E9BAE20E1CC95D83004C6E6D /* Networking */,
+				E9BAE1F11CC95D11004C6E6D /* HumOS */,
+			);
+			path = HumOS_SDK_iOS;
+			sourceTree = "<group>";
+		};
+		E9BAE1E51CC95906004C6E6D /* HumOS_SDK_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				E96738711CCEAFC200506BF2 /* HumOSTest.swift */,
+				E9BAE2381CC95F3E004C6E6D /* ConfigTest.m */,
+				E9BAE2391CC95F3E004C6E6D /* HumOSCleint_Tests.m */,
+				E9BAE23A1CC95F3E004C6E6D /* PatientLogin.m */,
+				E9BAE23B1CC95F3E004C6E6D /* ProviderLogin.m */,
+				E9BAE23C1CC95F3E004C6E6D /* ProviderWithParams_Test.m */,
+				E9BAE23D1CC95F3E004C6E6D /* PushMessage.m */,
+				E9BAE23E1CC95F3E004C6E6D /* SearchUserWithPhone.m */,
+				E9BAE23F1CC95F3E004C6E6D /* SearchWithEmailTest.m */,
+				E9BAE2401CC95F3E004C6E6D /* SignOutUser.m */,
+				E9BAE1E61CC95906004C6E6D /* HumOS_SDK_iOSTests.swift */,
+				E9BAE1E81CC95906004C6E6D /* Info.plist */,
+				E9BAE2371CC95F3E004C6E6D /* HumOS_SDK_iOSTests-Bridging-Header.h */,
+				E97069361CEBAAD700215675 /* HumOSUserTest.swift */,
+			);
+			path = HumOS_SDK_iOSTests;
+			sourceTree = "<group>";
+		};
+		E9BAE1F11CC95D11004C6E6D /* HumOS */ = {
+			isa = PBXGroup;
+			children = (
+				E9D974511D00C859008FBD79 /* Utils */,
+				E9D974461CFCC5BC008FBD79 /* Networking */,
+				E916E8311CF29B3A002C4644 /* Tracking */,
+				E916E82F1CF29A3B002C4644 /* Model */,
+				E97069351CEA9C9900215675 /* Extensions */,
+				E9BAE1F21CC95D32004C6E6D /* HumOS.swift */,
+				E9BAE1F31CC95D32004C6E6D /* HumOSAppConfig.swift */,
+				E9BAE1F81CC95D32004C6E6D /* HumOSErrorType.swift */,
+				E9BAE1FA1CC95D32004C6E6D /* HumOSSDK-Bridging-Header.h */,
+				E9BAE1FF1CC95D32004C6E6D /* HumOSVaults.swift */,
+			);
+			name = HumOS;
+			sourceTree = "<group>";
+		};
+		E9BAE20E1CC95D83004C6E6D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E9BAE2121CC95D99004C6E6D /* HumOSClient.h */,
+				E9BAE2131CC95D99004C6E6D /* HumOSClient.m */,
+				E9BAE2141CC95D99004C6E6D /* HumOSClientConstants.h */,
+				E9BAE2151CC95D99004C6E6D /* HumOSClientConstants.m */,
+				E9BAE2161CC95D99004C6E6D /* HumOSCloud.h */,
+				E9BAE2171CC95D99004C6E6D /* HumOSCloud.m */,
+				E9BAE2181CC95D99004C6E6D /* HumOSConfig.h */,
+				E9BAE2191CC95D99004C6E6D /* HumOSConfig.m */,
+				E9BAE21A1CC95D99004C6E6D /* HumOSNetworkManager.h */,
+				E9BAE21B1CC95D99004C6E6D /* HumOSNetworkManager.m */,
+				E9BAE21C1CC95D99004C6E6D /* HumOSQuery.h */,
+				E9BAE21D1CC95D99004C6E6D /* HumOSQuery.m */,
+				E9BAE2211CC95D99004C6E6D /* ParametersEncoder.h */,
+				E9BAE2221CC95D99004C6E6D /* ParametersEncoder.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E9D974461CFCC5BC008FBD79 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E9D974441CFCC5B2008FBD79 /* HumOSServerCommnds.swift */,
+				E9D974581D08DD85008FBD79 /* HumOSLoginService.swift */,
+				E9D974471CFE68EA008FBD79 /* HumOSMessagingService.swift */,
+				E9D974491CFEB59B008FBD79 /* HumOSServerErrorCodes.swift */,
+				E9D9744B1CFF6AAA008FBD79 /* HumOSParamKeys.swift */,
+				E9D9744D1CFF89FF008FBD79 /* HumOSServerError.swift */,
+				E9D9744F1CFF9483008FBD79 /* HumOSRequest.swift */,
+				E9D974521D00DB69008FBD79 /* HumOSCardsService.swift */,
+				E9D974561D01FE4E008FBD79 /* HumOSNetworkService.swift */,
+				E9D9745A1D0B745A008FBD79 /* HumOSSikkaProvidersService.swift */,
+				E9D9745E1D0BF75C008FBD79 /* HumOSBlobService.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E9D974511D00C859008FBD79 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E9D974541D00F46C008FBD79 /* NetworkingUtil.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E9BAE1D41CC95906004C6E6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BAE1DB1CC95906004C6E6D /* HumOS_SDK_iOS.h in Headers */,
+				E9BAE22E1CC95D99004C6E6D /* HumOSNetworkManager.h in Headers */,
+				E9BAE2081CC95D32004C6E6D /* HumOSSDK-Bridging-Header.h in Headers */,
+				E9BAE2301CC95D99004C6E6D /* HumOSQuery.h in Headers */,
+				E9BAE22A1CC95D99004C6E6D /* HumOSCloud.h in Headers */,
+				E9BAE2281CC95D99004C6E6D /* HumOSClientConstants.h in Headers */,
+				E9BAE2351CC95D99004C6E6D /* ParametersEncoder.h in Headers */,
+				E99722A81CE3EF0400587069 /* HumOSClient.h in Headers */,
+				E9BAE22C1CC95D99004C6E6D /* HumOSConfig.h in Headers */,
+				E99722A71CE3EB6100587069 /* libAFNetworking.a in Headers */,
+				E99722A61CE3E91D00587069 /* libMantle.a in Headers */,
+				E916E8341CF29CC2002C4644 /* Tracking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E9BAE1D61CC95906004C6E6D /* HumOS_SDK_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BAE1EB1CC95906004C6E6D /* Build configuration list for PBXNativeTarget "HumOS_SDK_iOS" */;
+			buildPhases = (
+				FFB20D636D0441CBEE0ECE5C /* Check Pods Manifest.lock */,
+				E9BAE1D21CC95906004C6E6D /* Sources */,
+				E9BAE1D31CC95906004C6E6D /* Frameworks */,
+				E9BAE1D41CC95906004C6E6D /* Headers */,
+				E9BAE1D51CC95906004C6E6D /* Resources */,
+				06AD9D30C4D0509B7C882D3C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HumOS_SDK_iOS;
+			productName = HumOS_SDK_iOS;
+			productReference = E9BAE1D71CC95906004C6E6D /* HumOS_SDK_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9BAE1E01CC95906004C6E6D /* HumOS_SDK_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9BAE1EE1CC95906004C6E6D /* Build configuration list for PBXNativeTarget "HumOS_SDK_iOSTests" */;
+			buildPhases = (
+				E9BAE1DD1CC95906004C6E6D /* Sources */,
+				E9BAE1DE1CC95906004C6E6D /* Frameworks */,
+				E9BAE1DF1CC95906004C6E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9BAE1E41CC95906004C6E6D /* PBXTargetDependency */,
+			);
+			name = HumOS_SDK_iOSTests;
+			productName = HumOS_SDK_iOSTests;
+			productReference = E9BAE1E11CC95906004C6E6D /* HumOS_SDK_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9BAE1CE1CC95906004C6E6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Ratna.Saripalli;
+				TargetAttributes = {
+					E9BAE1D61CC95906004C6E6D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E9BAE1E01CC95906004C6E6D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E9BAE1D11CC95906004C6E6D /* Build configuration list for PBXProject "HumOS_SDK_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9BAE1CD1CC95906004C6E6D;
+			productRefGroup = E9BAE1D81CC95906004C6E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9BAE1D61CC95906004C6E6D /* HumOS_SDK_iOS */,
+				E9BAE1E01CC95906004C6E6D /* HumOS_SDK_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9BAE1D51CC95906004C6E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BAE1DF1CC95906004C6E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06AD9D30C4D0509B7C882D3C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HumOS_SDK_iOS/Pods-HumOS_SDK_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB20D636D0441CBEE0ECE5C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9BAE1D21CC95906004C6E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BAE2311CC95D99004C6E6D /* HumOSQuery.m in Sources */,
+				E967389E1CDC5FF600506BF2 /* HumOSProviderUser.swift in Sources */,
+				E967389D1CDC5FF600506BF2 /* HumOSPlayCard.swift in Sources */,
+				E9BAE2011CC95D32004C6E6D /* HumOSAppConfig.swift in Sources */,
+				E9D9745B1D0B745A008FBD79 /* HumOSSikkaProvidersService.swift in Sources */,
+				E9D9745F1D0BF75C008FBD79 /* HumOSBlobService.swift in Sources */,
+				E9BAE2021CC95D32004C6E6D /* HumOSRegisteredConnection.swift in Sources */,
+				E9D974501CFF9483008FBD79 /* HumOSRequest.swift in Sources */,
+				E967387A1CD81CDC00506BF2 /* HumOSProvider.swift in Sources */,
+				E9BAE22D1CC95D99004C6E6D /* HumOSConfig.m in Sources */,
+				E9D974451CFCC5B2008FBD79 /* HumOSServerCommnds.swift in Sources */,
+				E9BAE20D1CC95D32004C6E6D /* HumOSVaults.swift in Sources */,
+				E967389B1CDC5FF600506BF2 /* HumOSPatientUser.swift in Sources */,
+				E9D974571D01FE4E008FBD79 /* HumOSNetworkService.swift in Sources */,
+				E916E8351CF29CC2002C4644 /* Tracking.m in Sources */,
+				E9D974611D0CFBA1008FBD79 /* HumOSTracking.swift in Sources */,
+				E9BAE22F1CC95D99004C6E6D /* HumOSNetworkManager.m in Sources */,
+				E96738981CDC5FF600506BF2 /* HumOSHelloCard.swift in Sources */,
+				E9D974591D08DD85008FBD79 /* HumOSLoginService.swift in Sources */,
+				E96738991CDC5FF600506BF2 /* HumOSInviteCard.swift in Sources */,
+				E9BAE2061CC95D32004C6E6D /* HumOSErrorType.swift in Sources */,
+				E9BAE2031CC95D32004C6E6D /* HumOSUnRegisteredConnection.swift in Sources */,
+				E9BAE2041CC95D32004C6E6D /* HumOSConnection.swift in Sources */,
+				E96738A01CDC5FF600506BF2 /* HumOSVisitCard.swift in Sources */,
+				E9BAE2001CC95D32004C6E6D /* HumOS.swift in Sources */,
+				E9BAE20B1CC95D32004C6E6D /* HumOSUser.swift in Sources */,
+				E9D974551D00F46C008FBD79 /* NetworkingUtil.swift in Sources */,
+				E967387C1CDABCA900506BF2 /* HumOSCard.swift in Sources */,
+				E9D9744C1CFF6AAA008FBD79 /* HumOSParamKeys.swift in Sources */,
+				E9D974481CFE68EA008FBD79 /* HumOSMessagingService.swift in Sources */,
+				E96738971CDC5FF600506BF2 /* HumOSBlob.swift in Sources */,
+				E9BAE2071CC95D32004C6E6D /* HumOSPatient.swift in Sources */,
+				E9D9745D1D0BA29A008FBD79 /* HumOSAddress.swift in Sources */,
+				E9BAE22B1CC95D99004C6E6D /* HumOSCloud.m in Sources */,
+				E9D9744E1CFF89FF008FBD79 /* HumOSServerError.swift in Sources */,
+				E9BAE2051CC95D32004C6E6D /* NSError.swift in Sources */,
+				E967389A1CDC5FF600506BF2 /* HumOSMessage.swift in Sources */,
+				E9D9744A1CFEB59B008FBD79 /* HumOSServerErrorCodes.swift in Sources */,
+				E96738781CD81BC800506BF2 /* HumOSPerson.swift in Sources */,
+				E9BAE2271CC95D99004C6E6D /* HumOSClient.m in Sources */,
+				E9BAE2291CC95D99004C6E6D /* HumOSClientConstants.m in Sources */,
+				E9D974531D00DB69008FBD79 /* HumOSCardsService.swift in Sources */,
+				E9BAE2361CC95D99004C6E6D /* ParametersEncoder.m in Sources */,
+				E967389C1CDC5FF600506BF2 /* HumOSPetCard.swift in Sources */,
+				E967389F1CDC5FF600506BF2 /* HumOSSmileCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9BAE1DD1CC95906004C6E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BAE2491CC95F3E004C6E6D /* SignOutUser.m in Sources */,
+				E97069371CEBAAD700215675 /* HumOSUserTest.swift in Sources */,
+				E9BAE2421CC95F3E004C6E6D /* HumOSCleint_Tests.m in Sources */,
+				E9BAE1E71CC95906004C6E6D /* HumOS_SDK_iOSTests.swift in Sources */,
+				E9BAE2461CC95F3E004C6E6D /* PushMessage.m in Sources */,
+				E96738721CCEAFC200506BF2 /* HumOSTest.swift in Sources */,
+				E9BAE2471CC95F3E004C6E6D /* SearchUserWithPhone.m in Sources */,
+				E9BAE2451CC95F3E004C6E6D /* ProviderWithParams_Test.m in Sources */,
+				E9BAE2411CC95F3E004C6E6D /* ConfigTest.m in Sources */,
+				E9BAE2481CC95F3E004C6E6D /* SearchWithEmailTest.m in Sources */,
+				E9BAE2441CC95F3E004C6E6D /* ProviderLogin.m in Sources */,
+				E9BAE2431CC95F3E004C6E6D /* PatientLogin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9BAE1E41CC95906004C6E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9BAE1D61CC95906004C6E6D /* HumOS_SDK_iOS */;
+			targetProxy = E9BAE1E31CC95906004C6E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E9BAE1E91CC95906004C6E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/AFNetworking\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9BAE1EA1CC95906004C6E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Headers/Public/AFNetworking\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods/**";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9BAE1EC1CC95906004C6E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2C6B39F0853D01F910829D /* Pods-HumOS_SDK_iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Private/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Google/Google\"",
+				);
+				INFOPLIST_FILE = HumOS_SDK_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SikkaSoftware.HumOS-SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Pods/GoogleAnalytics-iOS-SDK";
+			};
+			name = Debug;
+		};
+		E9BAE1ED1CC95906004C6E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1C42AE37BECAEEF7D6C030 /* Pods-HumOS_SDK_iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Private/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAnalytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Google/Google\"",
+				);
+				INFOPLIST_FILE = HumOS_SDK_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SikkaSoftware.HumOS-SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Pods/GoogleAnalytics-iOS-SDK";
+			};
+			name = Release;
+		};
+		E9BAE1EF1CC95906004C6E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = HumOS_SDK_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SikkaSoftware.HumOS-SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HumOS_SDK_iOSTests/HumOS_SDK_iOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9BAE1F01CC95906004C6E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = HumOS_SDK_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SikkaSoftware.HumOS-SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HumOS_SDK_iOSTests/HumOS_SDK_iOSTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9BAE1D11CC95906004C6E6D /* Build configuration list for PBXProject "HumOS_SDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BAE1E91CC95906004C6E6D /* Debug */,
+				E9BAE1EA1CC95906004C6E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BAE1EB1CC95906004C6E6D /* Build configuration list for PBXNativeTarget "HumOS_SDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BAE1EC1CC95906004C6E6D /* Debug */,
+				E9BAE1ED1CC95906004C6E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9BAE1EE1CC95906004C6E6D /* Build configuration list for PBXNativeTarget "HumOS_SDK_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9BAE1EF1CC95906004C6E6D /* Debug */,
+				E9BAE1F01CC95906004C6E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9BAE1CE1CC95906004C6E6D /* Project object */;
+}

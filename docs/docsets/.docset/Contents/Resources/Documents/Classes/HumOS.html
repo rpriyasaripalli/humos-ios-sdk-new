@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HumOS Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HumOS" class="dashAnchor"></a>
+    <a title="HumOS Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (52% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HumOS Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HumOS.html">HumOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HumOSAppConfig.html">HumOSAppConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS9HumOSBlob">HumOSBlob</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HumOSCard.html">HumOSCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS15HumOSConnection">HumOSConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HumOSError.html">HumOSError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS14HumOSHelloCard">HumOSHelloCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS15HumOSInviteCard">HumOSInviteCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS12HumOSMessage">HumOSMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS16HumOSPatientUser">HumOSPatientUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS11HumOSPerson">HumOSPerson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS12HumOSPetCard">HumOSPetCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS13HumOSPlayCard">HumOSPlayCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS12HumOSProfile">HumOSProfile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS13HumOSProvider">HumOSProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS17HumOSProviderUser">HumOSProviderUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS25HumOSRegisteredConnection">HumOSRegisteredConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS14HumOSSmileCard">HumOSSmileCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS27HumOSUnRegisteredConnection">HumOSUnRegisteredConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HumOSUser.html">HumOSUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C13HumOS_SDK_iOS14HumOSVisitCard">HumOSVisitCard</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HumOSAppEnvironmentType.html">HumOSAppEnvironmentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HumOSErrorType.html">HumOSErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HumOSMessageType.html">HumOSMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HumOSUserType.html">HumOSUserType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HumOS</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HumOS</span> <span class="p">:</span><span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>HumOS is a singleton class which will provide an appentry point to the Client. It encapulates  the app configuration set by the client and provides apis for registration, login and search apis.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOScFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOScFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HumOS</span> <span class="p">:</span><span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS13initializeSDKFCS_14HumOSAppConfigT_"></a>
+                    <a name="//apple_ref/swift/Method/initializeSDK(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS13initializeSDKFCS_14HumOSAppConfigT_">initializeSDK(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the SDK with the client&rsquo;s app configuration.</p>
+
+<ul>
+<li>param: HumOSAppConfig</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initializeSDK</span><span class="p">(</span><span class="nv">appConfig</span><span class="p">:</span><span class="kt">HumOSAppConfig</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS15registerPatientFzTSS8lastNameSS11phoneNumberSS11countryCodeSS5emailSS10completionFT9humOSUserCS_16HumOSPatientUser5errorGSqCS_10HumOSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/registerPatient(_:lastName:phoneNumber:countryCode:email:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS15registerPatientFzTSS8lastNameSS11phoneNumberSS11countryCodeSS5emailSS10completionFT9humOSUserCS_16HumOSPatientUser5errorGSqCS_10HumOSError__T__T_">registerPatient(_:lastName:phoneNumber:countryCode:email:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register Patient. Validates and creates and HumOSUser with the provided data.</p>
+
+<p><li><p>param: fistname lastname phoneNumber countryCode email completionblock that returns either error or HumOSUser object.</p></li>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>HumOSError</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerPatient</span><span class="p">(</span><span class="nv">fisrtName</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">phoneNumber</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">countryCode</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">email</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="nv">humOSUser</span><span class="p">:</span><span class="kt">HumOSPatientUser</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">HumOSError</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS16registerProviderFzTSS8lastNameSS11phoneNumberSS11countryCodeSS5emailSS10completionFT9humOSUserCS_17HumOSProviderUser5errorGSqCS_10HumOSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/registerProvider(_:lastName:phoneNumber:countryCode:email:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS16registerProviderFzTSS8lastNameSS11phoneNumberSS11countryCodeSS5emailSS10completionFT9humOSUserCS_17HumOSProviderUser5errorGSqCS_10HumOSError__T__T_">registerProvider(_:lastName:phoneNumber:countryCode:email:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register Provider. Validates and creates and HumOSUser with the provided data.</p>
+
+<p><li><p>param: fistname lastname phoneNumber countryCode email completionblock that returns either error or HumOSUser object.</p></li>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>HumOSError</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerProvider</span><span class="p">(</span><span class="nv">fisrtName</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">phoneNumber</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">countryCode</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">email</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="nv">humOSUser</span><span class="p">:</span><span class="kt">HumOSProviderUser</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">HumOSError</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC13HumOS_SDK_iOS5HumOS12loginPatientFTSS8passwordSS10completionFT9humOSUserCS_16HumOSPatientUser5errorGSqCS_10HumOSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/loginPatient(_:password:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC13HumOS_SDK_iOS5HumOS12loginPatientFTSS8passwordSS10completionFT9humOSUserCS_16HumOSPatientUser5errorGSqCS_10HumOSError__T__T_">loginPatient(_:password:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Login Patient.</p>
+
+<ul>
+<li>param: fistname lastname phoneNumber countryCode email completionblock
+HumOSUser</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">loginPatient</span><span class="p">(</span><span class="nv">userName</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="nv">humOSUser</span><span class="p">:</span><span class="kt">HumOSPatientUser</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">HumOSError</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC13HumOS_SDK_iOS5HumOS13loginProviderFTSS8passwordSS10completionFT9humOSUserCS_17HumOSProviderUser5errorGSqCS_10HumOSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/loginProvider(_:password:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC13HumOS_SDK_iOS5HumOS13loginProviderFTSS8passwordSS10completionFT9humOSUserCS_17HumOSProviderUser5errorGSqCS_10HumOSError__T__T_">loginProvider(_:password:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Login Provider.</p>
+
+<ul>
+<li>param: fistname lastname phoneNumber countryCode email completionblock
+HumOSUser</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">loginProvider</span><span class="p">(</span><span class="nv">userName</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="nv">humOSUser</span><span class="p">:</span><span class="kt">HumOSProviderUser</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">HumOSError</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS13findProvidersFTSi11specialitesCSo7NSArray8latitudeCSo8NSNumber9longitudeS2_10completionFT9providersS1_5errorGSqCS_10HumOSError__T__T_"></a>
+                    <a name="//apple_ref/swift/Method/findProviders(_:specialites:latitude:longitude:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS13findProvidersFTSi11specialitesCSo7NSArray8latitudeCSo8NSNumber9longitudeS2_10completionFT9providersS1_5errorGSqCS_10HumOSError__T__T_">findProviders(_:specialites:latitude:longitude:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search for Providers by page.</p>
+
+<ul>
+<li>param: pageNumber specialites phoneNumber latitude longitude completionblock that returns either error or an array of HumOSProvider objects</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">findProviders</span><span class="p">(</span><span class="nv">pageNumber</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="nv">specialites</span><span class="p">:</span><span class="kt">NSArray</span><span class="p">,</span> <span class="nv">latitude</span><span class="p">:</span><span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span><span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="nv">providers</span><span class="p">:</span><span class="kt">NSArray</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">HumOSError</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">()){}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS7getUserFzT_CS_9HumOSUser"></a>
+                    <a name="//apple_ref/swift/Method/getUser()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS7getUserFzT_CS_9HumOSUser">getUser()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the User object saved.</p>
+
+<p><li><p>return: HumOSUser</p></li>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>HumOSError</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUser</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">HumOSUser</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS22handlePushNotificationFzT_CS_9HumOSUser"></a>
+                    <a name="//apple_ref/swift/Method/handlePushNotification()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS22handlePushNotificationFzT_CS_9HumOSUser">handlePushNotification()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Client needs to call this methhod whenever a push notification for SDK is recieved.</p>
+
+<p><li><p>return: HumOSUser</p></li>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>HumOSError</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">HumOSUser</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS12startLoggingFzT_T_"></a>
+                    <a name="//apple_ref/swift/Method/startLogging()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS12startLoggingFzT_T_">startLogging()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start logging.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    HumOSError
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startLogging</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS11stopLoggingFzT_T_"></a>
+                    <a name="//apple_ref/swift/Method/stopLogging()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS11stopLoggingFzT_T_">stopLogging()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop logging.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    HumOSError
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopLogging</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS13enableLoggingFzSbT_"></a>
+                    <a name="//apple_ref/swift/Method/enableLogging(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS13enableLoggingFzSbT_">enableLogging(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop logging.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    HumOSError
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">enableLogging</span><span class="p">(</span><span class="nv">enable</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC13HumOS_SDK_iOS5HumOS7getUserFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/getUser()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC13HumOS_SDK_iOS5HumOS7getUserFT_T_">getUser()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HumOS</span> <span class="p">:</span><span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-05-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
